@@ -13,8 +13,7 @@ in the NES CPU.
 ## Features
 * Full (extended<sup>1</sup>) NES/Famicom controller port interface
 * 2 controllers handling (2 players allowed)
-* Slave mode: the controller could be connected both to the device and
-  to the console
+* Slave mode: the device captures inputs of console connected controller
 * 5V/3.3V selectable interface voltage (allows handling newer
   controllers, e.g. PSX)
 * 16 input data lines, 5 input/output control lines
