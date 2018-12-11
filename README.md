@@ -23,9 +23,9 @@ in the NES CPU.
              device has 8 data lines per port.
 
 ### Supported peripherals
-*NOTE: Supported console depends on hardware (a proper connector board,
- interface capability) and firmware, while supported peripheral of
- a console depends only on firmware.*
+*NOTE: Consoles support depends on hardware (a proper connector board,
+ interface capability) and firmware, while console's peripherals support
+ depends only on firmware.*
 
 Console      | Peripheral          | Notes
 ------------ | ------------------- | -------
@@ -58,7 +58,7 @@ and the pcb layout with [pcb-rnd](http://repo.hu/projects/pcb-rnd/).
 
 
 ## Firmware
-The firmware repository of this project is located [here](TODO).
+The firmware repository of this project is located [here](_TODO_).
 
 
 ## License
