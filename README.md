@@ -18,8 +18,10 @@ in the NES CPU.
   controllers, e.g. PSX)
 * 16 input data lines, 5 input/output control lines
 
+<sup>
 <sup>1</sup> NES provides 5 data lines per port ($4016, $4017); this
-             device has 8 data lines per port.
+             device provides 8 data lines per port.
+</sup>
 
 ### Supported peripherals
 *NOTE: Consoles support depends on hardware (a proper connector board,
@@ -33,14 +35,14 @@ NES/Famicom  | Standard controller |
 
 ## Hardware
 The design is divided into two modules: *main* and *connector*. The main
-module contains all the electronics (or most part of it), and the
+module contains all the electronics (or, most part of it), and the
 connector module is a mechanical interface to a controller port of
-a specific console. The connector module is then a replaceable part of
-the device.
+a specific console. The connector module could be replaced to support
+a different controller.
 
 The interface consists of 16 input lines (8 can be read at a time, since
 they are multiplexed) and 5 input/output lines. The output voltage on
-the 5 i/o lines can be set to 3.3V or 5V. The voltage and the direction
+the 5 I/O lines can be set to 3.3V or 5V. The voltage and the direction
 is controlled by the MCU. All these lines are named after NES/Famicom
 controller interface, and extended to 8 data lines instead of 5.
 
@@ -48,8 +50,8 @@ The connector module can be equipped with an I2C EEPROM providing
 information about console type. This identification allows automatically
 load the proper firmware for a specific controller type. *NOTE: A game
 console could have different controllers/peripherals connected to the
-same port. The ID ROM could only provide information about connector
-type, not a peripheral itself.*
+same port. The ID ROM could only provide information about
+console/connector type, not the peripheral itself.*
 
 ### Schematic/PCB
 The schematic was created with [gschem](http://www.geda-project.org/)
